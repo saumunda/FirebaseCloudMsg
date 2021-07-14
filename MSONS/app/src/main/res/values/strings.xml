@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">MSONS MEDICAL STORE </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="home">HOME</string>
+    <string name="search_medicines">SEARCH MEDICINES</string>
+    <string name="daily_offers">DAILY OFFERS</string>
+    <string name="book_your_medicines">BOOK MEDICINES</string>
+    <string name="categories">CATEGORIES</string>
+    <string name="exit">EXIT</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="medicines">MEDICINES\t\t\t\t\t\t\t\t\t\t\t<b>+</b></string>
+    <string name="allopathic">ALLOPATHIC</string>
+    <string name="ayurveda">AYURVEDA</string>
+    <string name="fitness_supplement"><![CDATA[FITNESS & SUPPLEMENT]]></string>
+    <string name="healthcare">HEALTH CARE</string>
+    <string name="personal_child_care"><![CDATA[PERSONAL & CHILD CARE]]></string>
+    <string name="homeopathy">HOMEOPATHY</string>
+    <string name="generic">GENERIC</string>
+    <string name="orthopadic">ORTHOPEDIC/SURGICAL</string>
+    <string name="www_msonsmedicalstore_com">www.msonsmedicalstore.com</string>
+    <string name="msons_medical_store">MSONS MEDICAL STORE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="no_notification">No Notification</string>
+    <string name="notif">NOTIF</string>
+    <string name="todo">todo</string>
+    <string name="order_prescribed_medicines">Order Prescribed Medicines</string>
+    <string name="profile">Profile</string>
+    <string name="start">start</string>
+    <string name="next">next</string>
+    <string name="help">Help</string>
+    <string name="title_activity_help_center">HelpCenter</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="email">email</string>
+
+
+</resources>

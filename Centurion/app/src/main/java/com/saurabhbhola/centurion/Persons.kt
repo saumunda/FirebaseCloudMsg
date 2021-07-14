@@ -1,0 +1,2 @@
+data class Persons(var student_mobile: String, var student_name: String, var student_photo: String )
+//data class Persons(var gender: String, var name: String, var location: String, var email: String, var dob: String, var phone: String, var cell: String, var picture: String )

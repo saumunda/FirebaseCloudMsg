@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/all">
+        <item
+            android:id="@+id/home_msons"
+            android:icon="@drawable/home"
+            android:title="@string/home"/>
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/notification"
+            android:title="@string/profile"/>
+
+
+
+    </group>
+
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/medicines"
+            android:icon="@drawable/ipill"
+            android:title="@string/medicines"
+            />
+
+        <item
+            android:id="@+id/ayurveda"
+            android:visible="false"
+            android:title="@string/ayurveda" />
+
+
+        <item
+            android:id="@+id/fitness"
+            android:visible="false"
+
+            android:title="@string/fitness_supplement" />
+
+        <item
+            android:id="@+id/allopathic"
+            android:visible="false"
+
+            android:title="@string/allopathic" />
+
+        <item
+            android:id="@+id/healthcare"
+            android:visible="false"
+
+            android:title="@string/healthcare" />
+
+        <item
+            android:id="@+id/personal"
+            android:visible="false"
+
+            android:title="@string/personal_child_care" />
+
+        <item
+            android:id="@+id/homeopathy"
+            android:visible="false"
+
+            android:title="@string/homeopathy" />
+
+        <item
+            android:id="@+id/generic"
+            android:visible="false"
+
+            android:title="@string/generic" />
+
+        <item
+            android:id="@+id/orthopadic"
+            android:visible="false"
+
+            android:title="@string/orthopadic" />
+
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/all2">
+
+
+        <item
+            android:id="@+id/contact_us"
+            android:icon="@drawable/email"
+            android:title="@string/contact_us" />
+
+    </group>
+
+
+</menu>

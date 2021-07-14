@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GoogleAutoComplete</string>
+
+        <string name="google_maps_key">123456</string>
+
+    <string name="enter_location_or_drag_map_to_select_location">Enter Location or Drag map to select location</string>
+</resources>
