@@ -1,48 +1,76 @@
 package com.saurabhbhola.centurion
 
-import Persons
-import android.content.Context
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 
-class RecyclerAdapter(val context: Context) : RecyclerView.Adapter<RecyclerAdapter.MyViewHolder>() {
 
-    var personsList : List<Persons> = listOf()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_adapter,parent,false)
-        return MyViewHolder(view)
+        var itemKode: TextView
+        var itemKategori: TextView
+        var itemIsi: TextView
+
+        init {
+            itemKode = itemView.findViewById(R.id.kodePertanyaan)
+            itemKategori = itemView.findViewById(R.id.kategori)
+            itemIsi = itemView.findViewById(R.id.isiPertanyaan)
+
+//            itemView.setOnClickListener {
+//                val position: Int = getAbsoluteAdapterPosition()
+//                val context = itemView.context
+//                val intent = Intent(context, NewClass::class.java).apply {
+//                    putExtra("NUMBER", position)
+//                    putExtra("CODE", itemKode.text)
+//                    putExtra("CATEGORY", itemKategori.text)
+//                    putExtra("CONTENT", itemIsi.text)
+//                }
+//                context.startActivity(intent)
+//            }
+        }
     }
+
+    private val kode = arrayOf("d116df5",
+        "36ffc75", "f5cfe78", "5b87628",
+        "db8d14e", "9913dc4", "e120f96",
+        "466251b")
+
+    private val kategori = arrayOf("Kekayaan", "Teknologi",
+        "Keluarga", "Bisnis",
+        "Keluarga", "Hutang",
+        "Teknologi", "Pidana")
+
+    private val isi = arrayOf("pertanyaan 9",
+        "pertanyaan 11", "pertanyaan 17", "test forum",
+        "pertanyaan 12", "pertanyaan 18", "pertanyaan 20",
+        "pertanyaan 21")
+
+
 
     override fun getItemCount(): Int {
-        return personsList.size
+
+        return kode.size
     }
 
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
-        holder.tvMovieName.text = personsList.get(position).student_name
-        Glide.with(context).load(personsList.get(position).student_photo)
-            .apply(RequestOptions().centerCrop())
-            .into(holder.image)
+
+
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
+        holder.itemKode.text = kode[position]
+        holder.itemKategori.text=kategori[position]
+        holder.itemIsi.text=isi[position]
     }
 
-    fun setPersonsListItems(personsList: List<Persons>){
-        this.personsList = personsList;
-        notifyDataSetChanged()
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
-
-        val tvMovieName: TextView = itemView!!.findViewById(R.id.title)
-        val image: ImageView = itemView!!.findViewById(R.id.image)
-
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.card, parent ,false)
+        return ViewHolder(v)
     }
 }

@@ -8,44 +8,39 @@
     android:background="#103FCA"
     tools:context=".MainActivity">
 
-    <!-- A ViewPager2 element with a TabLayout -->
-
-
-    <Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/teal_700"
-        android:navigationIcon="@drawable/h3"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:title="@string/home"
-        android:titleMarginStart="40dp"
-        android:logo="@drawable/h2"
-
-        >
-
-    </Toolbar>
-
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:layout_width="350dp"
-        android:layout_height="300dp"
+        android:layout_width="354dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="10dp"
         android:clipToPadding="false"
         android:foregroundGravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleView"
+    <LinearLayout
         android:layout_width="348dp"
-        android:layout_height="242dp"
-        android:padding="5dp"
+        android:layout_height="415dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+        app:layout_constraintTop_toBottomOf="@+id/viewPager">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

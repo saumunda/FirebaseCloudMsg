@@ -26,31 +26,17 @@ class MyAdapter (private val context: Context, private val myModelArrayList: Arr
 
         //get data
         val model = myModelArrayList[position]
-        val title = model.title
         val image = model.image
-
-        val linearlayout: LinearLayout = view.findViewById(R.id.linearlayout)
         val bannerIv: ImageView = view.findViewById(R.id.bannerIv)
-        val ttl: TextView = view.findViewById(R.id.titleTv)
 
 
         // add data to ui vieiew
-
-
         bannerIv.setImageResource(image)
-     //   bannerIv.clipToOutline
-        ttl.text =title
-
-
-        view.setOnClickListener {
-            Toast.makeText(context, "$title ", Toast.LENGTH_SHORT).show()
-
-        }
-
+//        view.setOnClickListener {
+//            Toast.makeText(context, "$title ", Toast.LENGTH_SHORT).show()
+//
+//        }
         container.addView(view, position)
-
-
-
         return view
     }
 

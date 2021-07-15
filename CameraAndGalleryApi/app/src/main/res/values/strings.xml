@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">CameraAndGalleryApi</string>
-    <string name="capture">Capture</string>
-    <string name="todo">TODO</string>
-    <string name="select_photo">Select Photo</string>
-</resources>
