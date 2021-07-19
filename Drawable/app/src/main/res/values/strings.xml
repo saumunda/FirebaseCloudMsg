@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Drawable</string>
+    <string name="newbutton">New Button</string>
+    <string name="todo">ToDo</string>
+</resources>
