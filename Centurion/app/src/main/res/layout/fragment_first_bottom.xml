@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
-    tools:context=".MainActivity">
+    tools:context=".BottomFragments.FirstFragment">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <LinearLayout
         android:layout_width="348dp"
@@ -46,18 +47,7 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:menu="@menu/bottom_navigation_menu" />
-
-    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

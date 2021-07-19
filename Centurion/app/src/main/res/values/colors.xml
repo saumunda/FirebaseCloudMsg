@@ -6,5 +6,10 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="grey">#B0191414</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="range">#86EF6E</color>
+    <color name="orange">#F66010</color>
+    <color name="blue">#36CEF4</color>
+    <color name="grey2">#7A7979</color>
 </resources>

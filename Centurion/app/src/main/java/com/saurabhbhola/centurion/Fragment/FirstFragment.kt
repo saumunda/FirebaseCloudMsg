@@ -5,10 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.ListView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.saurabhbhola.centurion.MyModel
 import com.saurabhbhola.centurion.R
 import com.saurabhbhola.centurion.RecyclerAdapter
 import kotlinx.android.synthetic.main.fragment_first.*
@@ -47,7 +46,7 @@ class FirstFragment : Fragment() {
 
         // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance(param1: MyModel) =
             FirstFragment().apply {
                 arguments = Bundle().apply {
 

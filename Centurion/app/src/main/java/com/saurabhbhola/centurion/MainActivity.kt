@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         )
 
+
     }
 
 
@@ -50,13 +51,13 @@ class MainActivity : AppCompatActivity() {
             override fun onConfigureTab(tab: TabLayout.Tab, position: Int) {
                 when(position){
                     0->{
-                     tab.text="First"
+                     tab.text="Live"
                     }
                     1->{
-                        tab.text="Second"
+                        tab.text="Upcoming"
                     }
                     2->{
-                        tab.text="Third"
+                        tab.text="Results"
 
                     }
                 }
@@ -98,4 +99,5 @@ class MainActivity : AppCompatActivity() {
            viewPager.setPadding(100, 0, 100, 0)
 
     }
+
 }
