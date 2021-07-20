@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LoginWithSharedPref</string>
+    <string name="login_with_shared_prefrences">Login With Shared Prefrences</string>
+    <string name="welcome_login">Welcome User</string>
+    <string name="username">Username</string>
+    <string name="password_here">password here</string>
+    <string name="username_here">username here</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="hello_user">Hello User</string>
+    <string name="register">Register</string>
+    <string name="enter_password_here">enter password here</string>
+    <string name="enter_username_here">enter username here</string>
+    <string name="registration">Registration</string>
+    <string name="username1">UserName</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
